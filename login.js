@@ -14,7 +14,7 @@ function validateForm() {
     alert("Password incorrecto");
     return false;
   }
-  if (username.value[0] === "M") {
+  if (username.value[0] !== "M") {
     window.open("farmaciaHome.html");
   } else {
     window.open("doctorHome.html");
