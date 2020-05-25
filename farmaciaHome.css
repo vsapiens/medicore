@@ -1,0 +1,314 @@
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { color: white;}
+input:-moz-placeholder { color: white;}
+input::-moz-placeholder { color: white;}
+input:-ms-input-placeholder { color: white;}
+
+textarea::-webkit-input-placeholder { color: white;}
+textarea:-moz-placeholder { color: white;}
+textarea::-moz-placeholder { color: white;}
+textarea:-ms-input-placeholder { color: white;}
+
+label {
+  margin: 0;
+  display: block;
+}
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+.limiter {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Muli";
+}
+
+.background {
+    background-image: url("images/health.jpg");
+    width: 100%;  
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;  
+}
+
+.scan-card {
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 55px 55px 37px 55px;
+
+    background: #55bcc9;
+    background: -webkit-linear-gradient(bottom, #55bcc9, #3feee6);
+    background: -o-linear-gradient(bottom, #55bcc9, #3feee6);
+    background: -moz-linear-gradient(bottom, #55bcc9, #3feee6);
+    background: linear-gradient(bottom, #55bcc9, #3feee6);
+}
+
+.container-back-btn {
+    float: left;
+}
+
+.back-btn {
+    font-size: 30px;
+    color: white;
+}
+
+.back-btn:hover {
+    color: #fc4445;
+}
+
+.scan-form {
+    width: 100%;
+}
+
+.scan-form-logo {
+    font-size: 60px; 
+    color: #fc4445;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.scan-form-title {
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+
+    display: block;
+
+    padding-bottom: 34px;
+    padding-top: 27px;
+}
+
+.scan-input {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid rgba(255,255,255,0.24);
+    margin-bottom: 30px;
+}
+
+.inputText {
+    font-size: 16px;
+    color: white;
+    line-height: 1.2;
+    
+    display: block;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    padding: 0 5px 0 38px;
+}
+
+.inputText:focus {
+    padding-left: 5px;
+}
+  
+.inputText:focus + .focus-input::after {
+    top: -22px;
+    font-size: 18px;
+    color: #fc4445;
+}
+
+.inputText:focus + .focus-input::before {
+    width: 100%;
+}
+
+.has-val.inputText + .focus-input::after {
+    top: -22px;
+    font-size: 18px;
+    color: #fc4445;
+}
+
+.has-val.inputText + .focus-input::before {
+    width: 100%;
+}
+
+.has-val.inputText {
+    padding-left: 5px;
+}
+
+.focus-input {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus-input::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  
+    background: white;
+}
+
+.focus-input::after {
+    font-family: Material-Design-Iconic-Font;
+    font-size: 22px;
+    color: white;
+  
+    content: attr(data-placeholder);
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    padding-left: 5px;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.container-scan-form-btn {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.scan-form-btn {
+    font-weight: 600;
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.2;
+  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 120px;
+    height: 50px;
+    border-radius: 25px;
+  
+    background: #55bcc9;
+    background: -webkit-linear-gradient(bottom, #35808a, #3feee6);
+    background: -o-linear-gradient(bottom, #35808a, #3feee6);
+    background: -moz-linear-gradient(bottom, #35808a, #3feee6);
+    background: linear-gradient(bottom, #35808a, #3feee6);
+    position: relative;
+    z-index: 1;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+  
+.scan-form-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+  
+.scan-form-btn:hover {
+    color: #fff;
+}
+  
+.scan-form-btn:hover:before {
+    opacity: 0;
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 576px) {
+    .scan-card {
+      padding: 55px 15px 37px 15px;
+    }
+  }

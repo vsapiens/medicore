@@ -1,0 +1,153 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js">
+        <link href="farmaciaExpediente.css" rel="stylesheet">
+        <!------ Include the above in your HEAD tag ---------->
+    </head>
+    <body>
+
+        <div class="page-wrapper bg-blue p-t-100 p-b-100">
+            <div class="wrapper">
+                <div class="card expediente-card">
+                    <div class="card-heading">
+                        <div class="container-back-btn">
+                            <a href="farmaciaHome.html" class="btn btn-outline back-btn" role="button"> 
+                                <i class="zmdi zmdi-arrow-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="title">Expediente
+                            <span class="expediente-form-logo">
+                                <i class="zmdi zmdi-folder-person"></i>
+                            </span>
+                        </h2>
+                            <form class="expediente-form">
+                            <div class="input-group">
+                                <input class="form-control" type="text" placeholder="Nombre" name="name" disabled>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <input class="form-control" type="text" placeholder="Edad" name="edad" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group">
+                                        <select class="form-control" name="Sexo" disabled>
+                                            <option selected="true">Sexo</option>
+                                            <option>Masculino</option>
+                                            <option>Femenino</option>
+                                            <option>Otro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="py-4 row">
+                                <h3>Datos de enfermedades o padecimientos:</h3>
+                            </div>
+
+
+                            
+                            <div class="row" >
+                                <div class="col-12">
+
+                                   <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Diabetes" checked disabled>
+                                    <label class="form-check-label" for="Diabetes">
+                                        Diabetes
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Hipertension" disabled>
+                                    <label class="form-check-label" for="Hipertension">
+                                        Hipertensión
+                                    </label>
+                                  </div><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Hipotension" disabled>
+                                    <label class="form-check-label" for="Hipotension">
+                                        Hipotensión
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Cancer" disabled>
+                                    <label class="form-check-label" for="Cancer">
+                                        Cáncer
+                                    </label>
+                                  </div><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Epilepsia" disabled>
+                                    <label class="form-check-label" for="Epilepsia">
+                                        Epilepsia
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Ceguera" checked disabled>
+                                    <label class="form-check-label" for="Ceguera">
+                                        Ceguera o discapacidad visual
+                                    </label>
+                                  </div><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Drepanocitosis" disabled>
+                                    <label class="form-check-label" for="Drepanocitosis">
+                                        Hemoglobinopatías
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Obesidad" disabled>
+                                    <label class="form-check-label" for="Obesidad">
+                                        Obesidad o sobrepeso
+                                    </label>
+                                  </div><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Enfermedad pulmonar/respiratoria" disabled>
+                                    <label class="form-check-label" for="Enfermedad pulmonar/respiratoria">
+                                        Enfermedad Respiratoria
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input"  type="checkbox" value="" id="Sordera" disabled>
+                                    <label class="form-check-label" for="Sordera">
+                                        Sordera o defectos de audición
+                                    </label>
+                                  </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <h4 class="pt-4">Información adicional:</h4>
+                            </div>
+
+                            <div class="row pt-4">
+                                <div class="col-12" >
+                                    <div class="input-group">
+                                        <textarea class="form-control" style="height: 400px;" id="patientInfo" 
+                                        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videamus animi partes, quarum est conspectus illustrior; Animum autem reliquis rebus ita perfecit, ut corpus; Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Quae cum dixisset paulumque institisset, Quid est? Duo Reges: constructio interrete. Non potes ergo ista tueri, Torquate, mihi crede, si te ipse et tuas cogitationes et studia perspexeris;
+
+                                        In qua si nihil est praeter rationem, sit in una virtute finis bonorum; Quod si ita se habeat, non possit beatam praestare vitam sapientia. Qui ita affectus, beatum esse numquam probabis; Ut optime, secundum naturam affectum esse possit. De ingenio eius in his disputationibus, non de moribus quaeritur. Te enim iudicem aequum puto, modo quae dicat ille bene noris. Si quae forte-possumus. Tubulum fuisse, qua illum, cuius is condemnatus est rogatione, P.
+                                        
+                                        
+                                        " disabled></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-scan-form-btn">
+                                <a href="farmaciaExpediente.html" class="btn scan-form-btn" role="button">
+                                    Escanear
+                                </a>
+                            </div>
+                        </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
